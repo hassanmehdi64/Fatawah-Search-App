@@ -8,56 +8,57 @@ export default function Home() {
   const tags = ["نماز", "روزہ", "نکاح", "طہارت", "جماعت", "زکوٰۃ"];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-gradient-to-b from-blue-50 via-white to-white">
-      {/* Logo */}
-      <div
-        className="mb-10 flex items-center justify-center w-28 h-28 rounded-3xl 
-        bg-white shadow-xl ring-1 ring-blue-100
-        hover:scale-105 transition-transform duration-300"
-      >
-        <BookOpenCheck className="w-16 h-16 text-blue-600" />
+    <div className="h-screen overflow-hidden flex flex-col items-center px-4 sm:px-6 bg-gradient-to-b from-blue-50 via-white to-white">
+      {/* Top Section */}
+      <div className="flex flex-col items-center mt-8">
+        <div
+          className="mb-4 flex items-center justify-center w-24 h-24 rounded-3xl
+          bg-white shadow-lg ring-1 ring-blue-100"
+        >
+          <BookOpenCheck className="w-14 h-14 text-blue-600" />
+        </div>
+
+        <h1
+          className="text-3xl sm:text-4xl md:text-6xl font-extrabold 
+          text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700
+          text-center"
+        >
+          Fatawah Search
+        </h1>
+
+        <p className="mt-2 text-gray-700 text-2xl sm:text-3xl text-center urdu-text">
+          مستند اسلامی مسائل کی تلاش
+        </p>
+
+        <p className="mt-1 text-gray-500 text-sm sm:text-base text-center max-w-lg">
+          Search through authentic Islamic rulings from respected scholars
+        </p>
       </div>
 
-      {/* Title */}
-      <h1
-        className="text-4xl sm:text-5xl md:text-6xl font-extrabold 
-        text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700 
-        text-center tracking-tight"
-      >
-        Fatawah Search
-      </h1>
-
-      {/* Subtitle */}
-      <p className="mt-4 text-gray-700 text-2xl sm:text-3xl text-center font-medium">
-        مستند اسلامی مسائل کی تلاش
-      </p>
-      <p className="mt-2 text-gray-500 text-base sm:text-lg text-center max-w-xl">
-        Search through authentic Islamic rulings from respected scholars
-      </p>
-
-      {/* Search */}
-      <div className="mt-10 w-full max-w-2xl space-y-4">
+      {/* Middle Section */}
+      <div className="flex-1 flex flex-col justify-center w-full max-w-2xl space-y-4">
         <SearchBar />
         <MujtahideenSlider />
       </div>
 
-      {/* Popular Tags */}
-      <div className="mt-10 text-center max-w-xl">
-        <p className="text-xl font-semibold text-gray-600 mb-4">
+      {/* Bottom Section */}
+      <div className="mb-6 text-center max-w-xl">
+        <p className="text-xl sm:text-2xl font-semibold text-gray-600 mb-3 urdu-text">
           مقبول موضوعات
         </p>
 
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="flex flex-wrap justify-center gap-2">
           {tags.map((tag) => (
             <button
               key={tag}
               onClick={() => navigate(`/search?q=${encodeURIComponent(tag)}`)}
               className="
-                px-5 py-2 rounded-full
-                bg-white text-gray-700 text-base sm:text-lg
+                urdu-text text-lg
+                px-6 py-1.5 rounded-full
+                bg-white text-gray-700
                 shadow-sm ring-1 ring-gray-200
-                hover:bg-blue-50 hover:text-blue-600 hover:ring-blue-200
-                transition-all duration-200
+                hover:bg-blue-50 hover:text-blue-600
+                transition
                 active:scale-95
               "
             >

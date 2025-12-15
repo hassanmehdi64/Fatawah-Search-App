@@ -13,22 +13,22 @@ export default function SearchBar({ initialQuery = "" }) {
 
   return (
     <div className="w-full">
-      <div className="relative flex items-stretch bg-white rounded-xl shadow-sm border overflow-hidden">
+      <div className="relative flex items-stretch bg-white rounded-full shadow-sm border overflow-hidden">
         {/* Search Button */}
         <button
           onClick={handleSearch}
           className="
-            flex items-center justify-center
-            px-4 sm:px-6
-            text-base sm:text-lg
-            font-medium
-            bg-blue-500 text-white
-            hover:bg-blue-700
-            transition
-          "
+    flex items-center justify-center
+    px-8 sm:px-12
+    py-2.5
+    text-2xl 
+    bg-blue-500 text-white
+    rounded-lg
+    hover:bg-blue-700
+    transition
+  "
         >
-          <span className="hidden sm:inline">تلاش</span>
-          <span className="sm:hidden">🔍</span>
+          <span className="urdu-text">تلاش</span>
         </button>
 
         {/* Input */}
@@ -38,17 +38,21 @@ export default function SearchBar({ initialQuery = "" }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleSearch()}
+          dir="rtl"
+          autoFocus
           className="
-            w-full
-            px-4 sm:px-6
-            py-3 sm:py-4
-            text-sm sm:text-lg
-            text-right text-gray-800
-            placeholder-gray-400
-            focus:outline-none
-            focus:ring-2 focus:ring-blue-500
-            transition
-          "
+    urdu-text
+    w-full
+    px-4 sm:px-6
+    py-3 sm:py-4
+    text-xl sm:text-2xl md:text-2xl
+    text-right
+    text-gray-800
+    placeholder-gray-400
+    outline-none
+    focus:outline-none
+    rounded-full
+  "
         />
       </div>
     </div>
