@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import fatawahData from "../Json-data";
 import Header from "../components/Header";
 import NoResults from "../components/NoResults";
+import { LiaExternalLinkAltSolid } from "react-icons/lia";
 
 export default function FatwahDetailPage() {
   const { id } = useParams();
@@ -19,21 +20,21 @@ export default function FatwahDetailPage() {
           {/* Topic badges */}
           <div className="flex flex-wrap gap-2 mb-4">
             <span className="px-3 py-1 text-xs rounded-full bg-blue-100 text-blue-700">
-              Family Law
+              {fatawah.tags_en[0]}
             </span>
             <span className="px-3 py-1 text-xs rounded-full bg-gray-100 text-gray-600">
-              Marriage
+              {fatawah.tags_en[1]}
             </span>
             {fatawah.source?.url && (
               <span className="px-3 py-1 text-xs rounded-full bg-blue-50 text-blue-600">
-                Website
+                {fatawah.tags_en[2]}
               </span>
             )}
           </div>
 
           {/* Question */}
           <div className="mb-6">
-            <p className="text-xs font-semibold text-blue-500 mb-2">سوال</p>
+            <p className="text-xl font-semibold text-blue-500 mb-2">سوال</p>
             <h1 className="text-2xl font-bold text-gray-900 leading-snug">
               {fatawah.question}
             </h1>
@@ -41,43 +42,76 @@ export default function FatwahDetailPage() {
 
           {/* Answer */}
           <div className="border border-gray-200 rounded-lg p-5 mb-6 bg-gray-50">
-            <p className="text-xs font-semibold text-blue-500 mb-2">جواب</p>
-            <p className="text-gray-800 leading-relaxed whitespace-pre-line">
+            <p className="text-xl font-semibold text-blue-500 mb-2">جواب</p>
+            <p className="text-gray-800 text-xl leading-relaxed whitespace-pre-line">
               {fatawah.answer}
             </p>
           </div>
 
           {/* Mujtahid & Source */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            {/* Mujtahid */}
-            <div className="flex items-center gap-3 border rounded-lg p-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+            {/* Mujtahid Card */}
+            <div
+              className="
+    flex items-center gap-4
+    bg-white
+    border border-gray-200
+    rounded-xl
+    p-5
+    shadow-sm
+    hover:shadow-md
+    transition
+  "
+            >
               <img
                 src={fatawah.mujtahid.logoUrl}
                 alt={fatawah.mujtahid.name}
-                className="w-20 h-20 rounded-full object-cover"
+                className="
+        w-20 h-20
+        rounded-full
+        object-cover
+        ring-2 ring-blue-100
+      "
               />
+
               <div>
-                <p className="text-xs text-gray-500">مجتہد</p>
-                <p className="font-medium text-gray-800">
+                <p className="text-lg uppercase tracking-wide text-gray-400 mb-1">
+                  مجتہد
+                </p>
+                <p className="text-xl font-semibold text-gray-800">
                   {fatawah.mujtahid.name}
                 </p>
               </div>
             </div>
 
-            {/* Source */}
-            <div className="border rounded-lg p-4">
-              <p className="text-xs text-gray-500 mb-1">ماخذ</p>
-              <p className="text-sm font-medium text-gray-700 mb-2">
-                {fatawah.source.type}
-              </p>
-              <a
-                href={fatawah.source.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-blue-600 text-white text-sm hover:bg-blue-700 transition"
-              >
-                اصل ماخذ کھولیں
-              </a>
+            {/* Source Card */}
+            <div
+              className="
+    bg-gray-50
+    border border-gray-200
+    rounded-xl
+    p-5
+    flex flex-col justify-between
+  "
+            >
+              <div>
+                <p className="text-lg uppercase tracking-wide text-gray-600  font-bold mb-1">
+                  اصل ماخذ
+                </p>
+
+                <p className="text-lg capitalize font-semibold text-gray-700 mb-4">
+                  <span className="inline-flex items-center gap-1">
+                    {fatawah.source.name}
+                    <a
+                      href={fatawah.source.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <LiaExternalLinkAltSolid className="text-base size-8 text-blue-500 cursor-pointer" />
+                    </a>
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
 

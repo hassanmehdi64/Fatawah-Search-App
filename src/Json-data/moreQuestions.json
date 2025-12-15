@@ -1,0 +1,133 @@
+[
+  {
+    "id": "sobhani-001",
+    "language": "ur",
+    "topic": "تفسیر قرآن",
+    "questionNumber": 1,
+    "question": "کیا عام انسان قرآن کی تفسیر اپنی رائے سے کر سکتا ہے؟",
+    "answer": "قرآن مجید کی تفسیر ایک نہایت حساس اور علمی موضوع ہے۔ عام انسان اگر دینی علوم، عربی زبان، اصولِ تفسیر اور معتبر روایات سے واقف نہ ہو تو اپنی ذاتی رائے کی بنیاد پر قرآن کی تفسیر نہیں کر سکتا۔ صحیح تفسیر وہی ہے جو اہلِ بیتؑ کی تعلیمات، معتبر احادیث اور مستند علمی اصولوں کے مطابق ہو، کیونکہ ذاتی رائے گمراہی کا سبب بن سکتی ہے۔",
+    "mujtahid": {
+      "name": "جعفر سبحانی",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Ja%27far_Sobhani_%D8%AC%D8%B9%D9%81%D8%B1_%D8%B3%D8%A8%D8%AD%D8%A7%D9%86%DB%8C_04.jpg/120px-Ja%27far_Sobhani_%D8%AC%D8%B9%D9%81%D8%B1_%D8%B3%D8%A8%D8%AD%D8%A7%D9%86%DB%8C_04.jpg"
+    },
+    "source": {
+      "type": "website",
+      "name": "Official Website",
+      "website": "https://sobhanionline.ir",
+      "pageTitle": "استفتاءات",
+      "url": "http://www.tohid.ir/"
+    },
+    "tags": ["قرآن"],
+    "tags_en": ["Quran", "Tafsir", "Interpretation"]
+  },
+
+  {
+    "id": "sobhani-002",
+    "language": "ur",
+    "topic": "اعتقادات",
+    "questionNumber": 2,
+    "question": "کیا تقلید اصول دین میں جائز ہے؟",
+    "answer": "اصولِ دین جیسے توحید، نبوت اور امامت ایسے بنیادی عقائد ہیں جن میں تقلید جائز نہیں۔ ہر مکلف شخص پر لازم ہے کہ وہ خود عقل اور دلیل کے ذریعے ان عقائد پر یقین حاصل کرے۔ البتہ فروعِ دین میں مجتہد کی تقلید کی اجازت ہے، کیونکہ وہاں عملی احکام کی تفصیل شامل ہوتی ہے۔",
+    "mujtahid": {
+      "name": "جعفر سبحانی",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Ja%27far_Sobhani_%D8%AC%D8%B9%D9%81%D8%B1_%D8%B3%D8%A8%D8%AD%D8%A7%D9%86%DB%8C_04.jpg/120px-Ja%27far_Sobhani_%D8%AC%D8%B9%D9%81%D8%B1_%D8%B3%D8%A8%D8%AD%D8%A7%D9%86%DB%8C_04.jpg"
+    },
+    "source": {
+      "type": "website",
+      "name": "Official Website",
+      "website": "https://sobhanionline.ir",
+      "pageTitle": "اصول دین",
+      "url": "https://sobhanionline.ir/usool"
+    },
+    "tags": ["اصول دین"],
+    "tags_en": ["Beliefs", "Usul-e-Deen", "Faith"]
+  },
+
+  {
+    "id": "javadi-amoli-001",
+    "language": "ur",
+    "topic": "اخلاق",
+    "questionNumber": 1,
+    "question": "کیا اسلامی اخلاق عبادت سے جدا ہیں؟",
+    "answer": "اسلامی تعلیمات میں اخلاق اور عبادت ایک دوسرے سے جدا نہیں بلکہ ایک دوسرے کی تکمیل کرتے ہیں۔ عبادت انسان کو اخلاقی بلندی عطا کرتی ہے اور اچھا اخلاق عبادت کے اثرات کو ظاہر کرتا ہے۔ اگر عبادت اخلاق میں بہتری پیدا نہ کرے تو وہ اپنی اصل روح سے خالی ہو جاتی ہے۔",
+    "mujtahid": {
+      "name": "عبدالله جوادی آملی",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Abdollah_Javadi-Amoli_01.jpg/250px-Abdollah_Javadi-Amoli_01.jpg"
+    },
+    "source": {
+      "type": "website",
+      "name": "Official Website",
+      "website": "https://javadiamoli.com",
+      "pageTitle": "اخلاق اسلامی",
+      "url": "https://javadiamoli.com/ethics"
+    },
+    "tags": ["اخلاق"],
+    "tags_en": ["Ethics", "Morality", "Worship"]
+  },
+
+  {
+    "id": "javadi-amoli-002",
+    "language": "ur",
+    "topic": "نماز",
+    "questionNumber": 2,
+    "question": "کیا نماز میں خشوع نہ ہو تو نماز قبول نہیں؟",
+    "answer": "خشوع نماز کے روحانی کمال اور اس کے اثرات کا سبب ہے۔ اگرچہ خشوع کے بغیر نماز شرعی اعتبار سے صحیح ہوتی ہے، لیکن اس کا اجر و ثواب کم ہو جاتا ہے۔ مومن کو چاہیے کہ نماز میں توجہ، عاجزی اور اللہ کی یاد کو زیادہ سے زیادہ حاصل کرنے کی کوشش کرے۔",
+    "mujtahid": {
+      "name": "عبدالله جوادی آملی",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Abdollah_Javadi-Amoli_01.jpg/250px-Abdollah_Javadi-Amoli_01.jpg"
+    },
+    "source": {
+      "type": "website",
+      "name": "Official Website",
+      "website": "https://javadiamoli.com",
+      "pageTitle": "احکام نماز",
+      "url": "https://javadiamoli.com/namaz"
+    },
+    "tags": ["نماز"],
+    "tags_en": ["Prayer", "Khushu", "Worship"]
+  },
+
+  {
+    "id": "wahid-khorasani-001",
+    "language": "ur",
+    "topic": "تقلید",
+    "questionNumber": 1,
+    "question": "کیا بالغ ہونے کے بعد فوراً کسی مجتہد کی تقلید واجب ہے؟",
+    "answer": "جب انسان بالغ ہو جاتا ہے تو اس پر شرعی احکام کی پابندی واجب ہو جاتی ہے۔ ایسے میں یا تو اسے خود مجتہد ہونا چاہیے یا کسی جامع الشرائط مجتہد کی تقلید اختیار کرنا لازم ہے۔ بغیر تقلید کے عمل کرنا شرعی طور پر درست نہیں۔",
+    "mujtahid": {
+      "name": "حسین وحید خراسانی",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hossein_Vahid_Khorasani%2C_mourning_martyrdom_of_Imam_Ali_in_Qom_%2841545%29.jpg/250px-Hossein_Vahid_Khorasani%2C_mourning_martyrdom_of_Imam_Ali_in_Qom_%2841545%29.jpg"
+    },
+    "source": {
+      "type": "website",
+      "name": "Official Website",
+      "website": "https://wahidkhorasani.ir",
+      "pageTitle": "استفتاءات",
+      "url": "https://wahidkhorasani.ir/fa/questions"
+    },
+    "tags": ["تقلید"],
+    "tags_en": ["Taqlid", "Jurisprudence", "Obligation"]
+  },
+
+  {
+    "id": "wahid-khorasani-002",
+    "language": "ur",
+    "topic": "نماز",
+    "questionNumber": 2,
+    "question": "کیا نماز میں شک ہونے پر نماز باطل ہو جاتی ہے؟",
+    "answer": "نماز میں بعض شک ایسے ہوتے ہیں جو نماز کو باطل کر دیتے ہیں، جبکہ بعض شکوں کے لئے شریعت نے مخصوص طریقے مقرر کیے ہیں۔ نماز پڑھنے والے پر لازم ہے کہ وہ ان احکام کو سیکھے تاکہ شک کی صورت میں صحیح عمل کر سکے۔",
+    "mujtahid": {
+      "name": "حسین وحید خراسانی",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hossein_Vahid_Khorasani%2C_mourning_martyrdom_of_Imam_Ali_in_Qom_%2841545%29.jpg/250px-Hossein_Vahid_Khorasani%2C_mourning_martyrdom_of_Imam_Ali_in_Qom_%2841545%29.jpg"
+    },
+    "source": {
+      "type": "website",
+      "name": "Official Website",
+      "website": "https://wahidkhorasani.ir",
+      "pageTitle": "احکام نماز",
+      "url": "https://wahidkhorasani.ir/fa/namaz"
+    },
+    "tags": ["نماز"],
+    "tags_en": ["Prayer", "Doubt", "Islamic Law"]
+  }
+]
