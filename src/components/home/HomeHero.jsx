@@ -6,7 +6,7 @@ function HomeHero() {
       <div
         className="
           flex items-center justify-center
-          w-14 h-14
+          w-20 h-20
           mt-2 p-2
           mb-4
           md:w-20 md:h-20
