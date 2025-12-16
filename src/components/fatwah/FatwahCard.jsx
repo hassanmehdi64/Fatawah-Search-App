@@ -1,4 +1,3 @@
-import FatwahRelatedTags from "./FatwahRelatedTags";
 import FatwahQuestion from "./FatwahQuestion";
 import FatwahAnswer from "./FatwahAnswer";
 import FatwahMujtahid from "./FatwahMujtahid";
@@ -8,13 +7,23 @@ import { Link } from "react-router-dom";
 
 function FatwahCard({ fatawah }) {
   return (
-    <div className="bg-white rounded-xl shadow-sm p-6">
-      <FatwahRelatedTags tags={fatawah.tags_en} />
+    <div className="bg-white rounded-xl shadow-sm p-4 sm:p-6">
       <FatwahQuestion question={fatawah.question} />
       <FatwahAnswer answer={fatawah.answer} />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8 urdu-text">
-        <FatwahMujtahid mujtahid={fatawah.mujtahid} topic={fatawah.topic} />
+      {/* 🔹 Cards Section */}
+      <div
+        className="
+          grid
+          grid-cols-1
+          sm:grid-cols-2
+          md:grid-cols-3
+          gap-4
+          mb-8
+          urdu-text
+        "
+      >
+        <FatwahMujtahid mujtahid={fatawah.mujtahid} />
         <FatwahSource source={fatawah.source} />
       </div>
 
