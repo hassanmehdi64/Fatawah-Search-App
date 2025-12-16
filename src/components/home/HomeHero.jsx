@@ -21,7 +21,7 @@ function HomeHero() {
 
       <h1
         className="
-          text-2xl sm:text-4xl md:text-7xl
+          text-5xl  md:text-7xl
           font-extrabold
           text-transparent bg-clip-text
           bg-gradient-to-r from-blue-500 to-blue-700
