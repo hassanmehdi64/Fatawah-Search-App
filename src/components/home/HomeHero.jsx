@@ -2,23 +2,24 @@ import { BookOpenCheck } from "lucide-react";
 
 function HomeHero() {
   return (
-    <div className="flex flex-col items-center pt-8 sm:pt-10">
+    <div className="flex flex-col items-center  sm:pt-20">
       <div
         className="
           flex items-center justify-center
           w-24 h-24
+          mt-7
           rounded-3xl
           bg-white
           shadow-lg
           ring-1 ring-blue-100
         "
       >
-        <BookOpenCheck className="w-14 h-14 text-blue-600" />
+        <BookOpenCheck className="w-16 h-16 text-blue-600" />
       </div>
 
       <h1
         className="
-          text-3xl sm:text-4xl md:text-7xl
+          text-2xl sm:text-4xl md:text-7xl
           font-extrabold
           text-transparent bg-clip-text
           bg-gradient-to-r from-blue-500 to-blue-700
@@ -36,7 +37,6 @@ function HomeHero() {
           text-center
           urdu-text
           leading-snug
-          mt-0
         "
       >
         مستند اسلامی مسائل کی تلاش
@@ -44,7 +44,7 @@ function HomeHero() {
 
       <p
         className="
-          mt-0 mb-4
+          mt-0 mb-2
           text-gray-700 md:text-2xl
           text-center
           max-w-lg

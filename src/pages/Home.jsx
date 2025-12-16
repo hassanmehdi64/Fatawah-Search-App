@@ -4,14 +4,38 @@ import SearchSection from "../components/home/SearchSection";
 
 export default function Home() {
   return (
-    // Page wrapper — prevents horizontal scroll
-    <div className="min-h-screen overflow-y-hidden w-full overflow-x-hidden bg-gradient-to-b from-blue-50 via-white to-white">
-      {/* Content container — centers and constrains width */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col items-center">
+    <main
+      className="
+        min-h-svh
+        bg-gradient-to-b from-blue-50 via-white to-white
+        flex items-center justify-center
+        px-4
+        overflow-y-auto
+      "
+    >
+      <section
+        className="
+          w-full max-w-6xl
+          flex flex-col
+          items-center
+          justify-center
+          gap-4 sm:gap-6
+          text-center
+        "
+      >
+        {/* Hero */}
         <HomeHero />
-        <SearchSection />
-        <PopularTags />
-      </div>
-    </div>
+
+        {/* Search (original width, centered) */}
+        <div className="w-full flex justify-center">
+          <SearchSection />
+        </div>
+
+        {/* Tags (always visible, never cut) */}
+        <div className="w-full flex justify-center">
+          <PopularTags />
+        </div>
+      </section>
+    </main>
   );
 }

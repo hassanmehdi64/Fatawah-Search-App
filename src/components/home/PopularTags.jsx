@@ -5,31 +5,35 @@ function PopularTags() {
   const tags = ["نماز", "روزہ", "نکاح", "طہارت", "جماعت", "زکوٰۃ"];
 
   return (
-    <div className="pb-6 sm:pb-8 text-center max-w-xl">
-      <p className="text-xl sm:text-2xl font-semibold text-gray-600 mb-3 urdu-text">
-        مقبول موضوعات
-      </p>
-
-      <div className="flex flex-wrap justify-center gap-2">
+    <div className="w-full max-w-6xl mx-auto pb-6 sm:pb-8">
+      <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+        {/* Tags first */}
         {tags.map((tag) => (
           <button
             key={tag}
             onClick={() => navigate(`/search?q=${encodeURIComponent(tag)}`)}
             className="
-              urdu-text text-sm md:text-xl cursor-pointer
-              px-6 py-1.5
+              urdu-text
+              text-sm sm:text-base md:text-xl
+              px-4 sm:px-6 py-1 sm:py-2
               rounded-full
-              bg-green-200 text-gray-800
+              bg-green-200 text-gray-900
               font-medium
               shadow-sm ring-1 ring-gray-200
-              hover:bg-green-300 
+              hover:bg-green-300
               transition
               active:scale-95
+              focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400
             "
           >
             {tag}
           </button>
         ))}
+
+        {/* Label at end */}
+        <span className="urdu-text text-base sm:text-xl md:text-2xl font-semibold text-gray-600 whitespace-nowrap">
+          مقبول موضوعات:
+        </span>
       </div>
     </div>
   );

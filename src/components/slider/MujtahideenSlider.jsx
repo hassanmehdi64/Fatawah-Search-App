@@ -21,23 +21,31 @@ export default function MujtahideenSlider() {
   if (!images.length) return null;
 
   return (
-    <div className="mt-10">
+    <div className="mt-2 w-full overflow-hidden">
       <Swiper
         modules={[Autoplay, Pagination]}
-        slidesPerView={3}
-        spaceBetween={25}
         centeredSlides
         loop
+        dir="rtl"
+        spaceBetween={6}
         autoplay={{
-          delay: 2000,
+          delay: 2200,
           disableOnInteraction: false,
         }}
         pagination={{
           clickable: true,
           el: ".mujtahid-pagination",
         }}
+        breakpoints={{
+          0: {
+            slidesPerView: 3,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+        }}
         className="max-w-md mx-auto"
-        dir="rtl"
       >
         {images.map((img, i) => (
           <SwiperSlide key={i}>
@@ -45,25 +53,26 @@ export default function MujtahideenSlider() {
               <div
                 className={`
                   flex justify-center items-center
-                  transition-all duration-500
-                  ${isActive ? "scale-110" : "scale-90 opacity-60"}
+                  transition-all duration-300
+                  ${isActive ? "scale-105" : "scale-95 opacity-70"}
                 `}
               >
                 <div
                   className={`
-                    p-3 rounded-full
-                    ${isActive ? "bg-white shadow-xl" : "bg-white/70"}
+                    p-1.5 sm:p-2 rounded-full
+                    ${isActive ? "bg-white shadow-md" : "bg-white/60"}
                   `}
                 >
                   <img
                     src={img}
                     alt="Mujtahid"
                     className={`
-                      w-20 h-20 rounded-full object-cover
-                    
+                      w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20
+                      rounded-full object-cover
+                      border
                       ${
                         isActive
-                          ? "border-blue-400 shadow-[0_0_20px_rgba(59,130,246,0.35)]"
+                          ? "border-blue-400 shadow-[0_0_12px_rgba(59,130,246,0.3)]"
                           : "border-blue-200"
                       }
                     `}
@@ -75,8 +84,8 @@ export default function MujtahideenSlider() {
         ))}
       </Swiper>
 
-      {/* Pagination spacing */}
-      <div className="mujtahid-pagination mt- flex justify-center gap-2" />
+      {/* Pagination */}
+      <div className="mujtahid-pagination mt-3 flex justify-center gap-2" />
     </div>
   );
 }

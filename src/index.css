@@ -1,9 +1,4 @@
-html,
-body {
-  width: 100%;
-  max-width: 100%;
 
-}
 @font-face {
   font-family: "Jameel Noori Nastaleeq";
   src: url("/fonts/JameelNooriNastaleeqRegular.ttf") format("truetype");
