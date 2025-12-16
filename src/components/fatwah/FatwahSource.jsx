@@ -12,6 +12,11 @@ function FatwahSource({ source }) {
         </p>
       )}
 
+      {/* Source label */}
+      <span className="text-lg  md:text-2xl text-gray-500 mb-1 urdu-text">
+        اصل ماخذ
+      </span>
+
       <a
         href={source.url}
         target="_blank"

@@ -11,7 +11,6 @@ function FatwahCard({ fatawah }) {
       <FatwahQuestion question={fatawah.question} />
       <FatwahAnswer answer={fatawah.answer} />
 
-      {/* 🔹 Info Cards */}
       <div
         className="
           grid
@@ -28,7 +27,6 @@ function FatwahCard({ fatawah }) {
 
       <FatwahTags tags={fatawah.tags} />
 
-      {/* 🔹 Improved Button */}
       <div className="pt-6 border-t flex justify-center">
         <Link
           to="/"
