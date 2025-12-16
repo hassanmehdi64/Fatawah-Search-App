@@ -72,8 +72,8 @@ export default function MujtahideenSlider() {
                       border
                       ${
                         isActive
-                          ? "border-blue-400 shadow-[0_0_12px_rgba(59,130,246,0.3)]"
-                          : "border-blue-200"
+                          ? " shadow-[0_0_12px_rgba(59,130,246,0.3)]"
+                          : ""
                       }
                     `}
                   />
