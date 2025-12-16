@@ -7,7 +7,8 @@ function HeaderHomeButton() {
       to="/"
       className="
         flex items-center justify-center
-        w-12 h-12
+       md:w-14 md:h-14
+       p-2
         rounded-full
         bg-blue-100
         hover:bg-blue-200

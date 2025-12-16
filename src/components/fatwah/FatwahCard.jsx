@@ -14,7 +14,7 @@ function FatwahCard({ fatawah }) {
       <FatwahAnswer answer={fatawah.answer} />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8 urdu-text">
-        <FatwahMujtahid mujtahid={fatawah.mujtahid} />
+        <FatwahMujtahid mujtahid={fatawah.mujtahid} topic={fatawah.topic} />
         <FatwahSource source={fatawah.source} />
       </div>
 

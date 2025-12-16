@@ -16,12 +16,13 @@ function PopularTags() {
             key={tag}
             onClick={() => navigate(`/search?q=${encodeURIComponent(tag)}`)}
             className="
-              urdu-text text-lg
+              urdu-text text-lg cursor-pointer
               px-6 py-1.5
               rounded-full
-              bg-white text-gray-700
+              bg-green-200 text-gray-800
+              font-medium
               shadow-sm ring-1 ring-gray-200
-              hover:bg-blue-50 hover:text-blue-600
+              hover:bg-green-300 
               transition
               active:scale-95
             "

@@ -1,4 +1,4 @@
-import SearchBar from "../search/SearchBar";
+import SearchBar from "../searchbar/SearchBar";
 
 function HeaderSearch({ initialQuery }) {
   return (

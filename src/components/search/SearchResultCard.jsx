@@ -12,11 +12,11 @@ function SearchResultCard({ item, index }) {
       "
     >
       <div className="p-6">
-        {/* Question */}
+        {/* ===================Question======================= */}
         <Link to={`/fatwah/${item.id || index}`}>
           <h2
             className="
-              text-2xl font-bold text-slate-900
+              text-xl md:text-2xl font-bold text-slate-900
               leading-snug mb-3 line-clamp-1
               hover:text-blue-600 transition urdu-text
             "
@@ -26,11 +26,23 @@ function SearchResultCard({ item, index }) {
           </h2>
         </Link>
 
-        {/* Answer preview */}
-        <p className="text-gray-600 leading-relaxed urdu-text line-clamp-3 text-2xl font-semibold">
+        {/* ================== Answer preview ========================= */}
+        <p className="text-gray-600 leading-relaxed urdu-text text-xl md:text-2xl  font-semibold line-clamp-2">
           <span className="text-2xl text-blue-600 font-bold ml-1">جواب:</span>
           {item.answer || item.answer_ur}
         </p>
+        {/* Read more */}
+        <Link
+          to={`/fatwah/${item.id || index}`}
+          className="
+            text-xl md:text-2xl font-medium text-blue-600
+            hover:underline
+            whitespace-nowrap
+            urdu-text
+          "
+        >
+          مکمل جواب پڑھیں →
+        </Link>
       </div>
 
       {/* Footer */}
@@ -53,19 +65,6 @@ function SearchResultCard({ item, index }) {
             </div>
           </div>
         )}
-
-        {/* Read more */}
-        <Link
-          to={`/fatwah/${item.id || index}`}
-          className="
-            text-xl font-medium text-blue-600
-            hover:underline
-            whitespace-nowrap
-            urdu-text
-          "
-        >
-          مکمل جواب پڑھیں →
-        </Link>
       </div>
 
       {/* Topic & Tags */}

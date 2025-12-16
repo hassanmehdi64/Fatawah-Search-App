@@ -1,4 +1,4 @@
-import SearchBar from "../search/SearchBar";
+import SearchBar from "../searchbar/SearchBar";
 import MujtahideenSlider from "../slider/MujtahideenSlider";
 
  function SearchSection() {

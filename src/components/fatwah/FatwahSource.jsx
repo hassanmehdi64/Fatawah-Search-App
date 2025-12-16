@@ -1,13 +1,16 @@
 import { LiaExternalLinkAltSolid } from "react-icons/lia";
 
- function FatwahSource({ source }) {
+function FatwahSource({ source }) {
   if (!source?.url) return null;
 
   return (
     <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
-      <p className="text-2xl tracking-wide text-gray-600 font-semibold mb-2 urdu-text">
-        اصل ماخذ
-      </p>
+      {/* Page Title from source */}
+      {source.pageTitle && (
+        <p className="text-xl md:text-2xl tracking-wide text-gray-600 mb-2 urdu-text">
+          {source.pageTitle}
+        </p>
+      )}
 
       <a
         href={source.url}

@@ -60,7 +60,7 @@ export default function MujtahideenSlider() {
                     alt="Mujtahid"
                     className={`
                       w-20 h-20 rounded-full object-cover
-                      border-4
+                    
                       ${
                         isActive
                           ? "border-blue-400 shadow-[0_0_20px_rgba(59,130,246,0.35)]"
