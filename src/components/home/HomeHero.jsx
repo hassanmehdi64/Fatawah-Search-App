@@ -7,7 +7,7 @@ function HomeHero() {
       <div
         className="
           flex items-center justify-center
-          w-16 h-16 sm:w-20 sm:h-20
+          w-16 h-16 sm:w-26 sm:h-22
           mb-4
           rounded-2xl
           bg-white
@@ -15,7 +15,15 @@ function HomeHero() {
           ring-1 ring-blue-100
         "
       >
-        <BookOpenCheck className="w-10 h-10 sm:w-14 sm:h-14 text-blue-600" />
+        <BookOpenCheck
+          className="
+          p-2
+    w-14 h-14
+    md:w-16 md:h-16
+    lg:w-20 lg:h-20
+    text-blue-600
+  "
+        />
       </div>
 
       {/* Title */}

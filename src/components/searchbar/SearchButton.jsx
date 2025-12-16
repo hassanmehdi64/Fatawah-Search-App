@@ -8,7 +8,7 @@ function SearchButton({ onClick, disabled }) {
       disabled={disabled}
       aria-label="Search"
       className="
-        flex items-center justify-center
+        flex items-center justify-center cursor-pointer
         h-9 w-12
         sm:h-10 sm:w-auto
         px-0 sm:px-4
