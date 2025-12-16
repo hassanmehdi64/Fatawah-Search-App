@@ -1,17 +1,35 @@
-
 @font-face {
   font-family: "Jameel Noori Nastaleeq";
   src: url("/fonts/JameelNooriNastaleeqRegular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
-  text-spacing-trick: optimizeLegibility;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: "JASVCoder LT";
+  src: url("/fonts/CODE-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Urdu text */
 .urdu-text {
-  font-family: "Jameel Noori Nastaleeq", serif;
+  font-family: "Jameel Noori Nastaleeq", "Noto Nastaliq Urdu", serif;
   direction: rtl;
   text-align: right;
-  line-height: 2;
+  line-height: 2.2;
+  text-rendering: optimizeLegibility;
+  word-spacing: 0.05em;
 }
 
+/* Headings / Latin text */
+.heading {
+  font-family:  "JASVCoder LT", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Tailwind */
 @import "tailwindcss";
