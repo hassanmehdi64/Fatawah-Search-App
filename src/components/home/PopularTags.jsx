@@ -16,7 +16,7 @@ function PopularTags() {
             key={tag}
             onClick={() => navigate(`/search?q=${encodeURIComponent(tag)}`)}
             className="
-              urdu-text text-lg cursor-pointer
+              urdu-text text-sm md:text-xl cursor-pointer
               px-6 py-1.5
               rounded-full
               bg-green-200 text-gray-800
