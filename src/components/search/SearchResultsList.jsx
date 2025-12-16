@@ -7,7 +7,6 @@ function SearchResultsList({ results }) {
         h-[540px auto]        
         sm:h-auto
         sm:max-h-[75vh]
-        overflow-y-auto
         space-y-4
         pr-1
       "

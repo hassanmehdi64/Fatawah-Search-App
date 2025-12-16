@@ -31,7 +31,7 @@ function PopularTags() {
         ))}
 
         {/* Label at end */}
-        <span className="urdu-text text-base sm:text-xl md:text-2xl font-semibold text-gray-600 whitespace-nowrap">
+        <span className="urdu-text text-base sm:text-xl md:text-2xl font-semibold text-gray-600 whitespace-nowrap scroll-mb-4">
           مقبول موضوعات:
         </span>
       </div>

@@ -12,6 +12,7 @@ function SearchResultCard({ item, index }) {
       "
     >
       <div className="p-6">
+        {/* Question */}
         <Link to={`/fatwah/${item.id || index}`}>
           <h2
             className="
@@ -27,36 +28,37 @@ function SearchResultCard({ item, index }) {
           </h2>
         </Link>
 
-        <p className="text-gray-600 leading-relaxed urdu-text text-sm md:text-2xl font-semibold line-clamp-2">
+        {/* Answer */}
+        <p className="text-gray-600 leading-relaxed urdu-text text-sm md:text-2xl font-semibold line-clamp-2 mb-3">
           <span className="text-xl text-blue-600 font-bold ml-1">جواب:</span>
           {item.answer || item.answer_ur}
         </p>
 
-        <Link
-          to={`/fatwah/${item.id || index}`}
-          className="text-sm md:text-2xl font-medium text-blue-600 hover:underline urdu-text"
-        >
-          مکمل جواب پڑھیں →
-        </Link>
-      </div>
+        {/* Read more + Mujtahid inline */}
+        <div className="flex flex-wrap items-center gap-3 urdu-text">
+          <Link
+            to={`/fatwah/${item.id || index}`}
+            className="text-sm md:text-2xl font-medium text-blue-600 hover:underline"
+          >
+            مکمل جواب پڑھیں →
+          </Link>
 
-      {item.mujtahid && (
-        <div className="border-t border-gray-300 px-6 py-4 flex items-center gap-3 urdu-text">
-          {item.mujtahid.logoUrl && (
-            <img
-              src={item.mujtahid.logoUrl}
-              alt={item.mujtahid.name}
-              className="w-8 h-8 md:w-12 md:h-12 rounded-full object-cover ring-1 ring-gray-200"
-            />
+          {item.mujtahid && (
+            <div className="flex items-center gap-2 text-gray-600">
+              {item.mujtahid.logoUrl && (
+                <img
+                  src={item.mujtahid.logoUrl}
+                  alt={item.mujtahid.name}
+                  className="w-6 h-6 md:w-8 md:h-8 rounded-full object-cover ring-1 ring-gray-200"
+                />
+              )}
+              <span className="text-xs md:text-lg font-semibold">
+                {item.mujtahid.name}
+              </span>
+            </div>
           )}
-          <div>
-            <p className="text-xl md:text-2xl text-gray-500">مجتہد</p>
-            <p className="text-gray-700 font-semibold text-sm md:text-2xl">
-              {item.mujtahid.name}
-            </p>
-          </div>
         </div>
-      )}
+      </div>
     </article>
   );
 }
