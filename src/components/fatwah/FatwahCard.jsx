@@ -11,13 +11,12 @@ function FatwahCard({ fatawah }) {
       <FatwahQuestion question={fatawah.question} />
       <FatwahAnswer answer={fatawah.answer} />
 
-      {/* 🔹 Cards Section */}
+      {/* 🔹 Info Cards */}
       <div
         className="
           grid
           grid-cols-1
           sm:grid-cols-2
-          md:grid-cols-3
           gap-4
           mb-8
           urdu-text
@@ -29,17 +28,25 @@ function FatwahCard({ fatawah }) {
 
       <FatwahTags tags={fatawah.tags} />
 
-      <div className="pt-4 border-t text-center">
+      {/* 🔹 Improved Button */}
+      <div className="pt-6 border-t flex justify-center">
         <Link
           to="/"
           className="
-            inline-block px-6 py-2
-            rounded-md bg-gray-900 text-white
-            text-lg hover:bg-black transition
+            inline-flex items-center justify-center
+            px-6 sm:px-8
+            py-2.5
+            rounded-full
+            bg-gray-900 text-white
+            text-sm sm:text-lg
+            hover:bg-black
+            active:scale-95
+            transition-all
             urdu-text
+            shadow-sm
           "
         >
-          واپس ہوم
+          ← واپس ہوم
         </Link>
       </div>
     </div>

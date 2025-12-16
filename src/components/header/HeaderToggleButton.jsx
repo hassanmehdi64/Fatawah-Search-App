@@ -1,6 +1,6 @@
 import { ArrowLeft, Home } from "lucide-react";
 
-function HeaderToggleButton({ mode, onClick }) {
+function HeaderToggleButton({ mode = "back", onClick }) {
   return (
     <button
       onClick={onClick}
@@ -12,7 +12,6 @@ function HeaderToggleButton({ mode, onClick }) {
         hover:bg-gray-200
         transition
       "
-      aria-label={mode === "back" ? "Back" : "Home"}
     >
       {mode === "back" ? (
         <ArrowLeft className="w-5 h-5 text-gray-700" />

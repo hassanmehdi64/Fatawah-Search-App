@@ -24,9 +24,6 @@ export default function SearchResults() {
     );
   });
 
-  // ✅ ONLY FIRST 3 RESULTS
-  const visibleResults = results.slice(0, 3);
-
   return (
     <div className="min-h-screen bg-slate-50" dir="rtl">
       <Header />
@@ -34,10 +31,10 @@ export default function SearchResults() {
       <main className="max-w-6xl mx-auto px-4 py-8">
         <ResultsSummary count={results.length} query={rawQuery} />
 
-        {visibleResults.length === 0 ? (
+        {results.length === 0 ? (
           <NoResults />
         ) : (
-          <SearchResultsList results={visibleResults} />
+          <SearchResultsList results={results} />
         )}
       </main>
     </div>
