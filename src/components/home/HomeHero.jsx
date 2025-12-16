@@ -1,0 +1,63 @@
+import { BookOpenCheck } from "lucide-react";
+
+function HomeHero() {
+  return (
+    <div className="flex flex-col items-center pt-8 sm:pt-10">
+      <div
+        className="
+          flex items-center justify-center
+          w-24 h-24
+          rounded-3xl
+          bg-white
+          shadow-lg
+          ring-1 ring-blue-100
+        "
+      >
+        <BookOpenCheck className="w-14 h-14 text-blue-600" />
+      </div>
+
+      <h1
+        className="
+          text-3xl sm:text-4xl md:text-7xl
+          font-extrabold
+          text-transparent bg-clip-text
+          bg-gradient-to-r from-blue-500 to-blue-700
+          text-center urdu-text
+          leading-tight
+        "
+      >
+        فتاویٰ تلاش
+      </h1>
+
+      <p
+        className="
+          text-gray-700
+          text-2xl sm:text-3xl
+          text-center
+          urdu-text
+          leading-snug
+          mt-0
+        "
+      >
+        مستند اسلامی مسائل کی تلاش
+      </p>
+
+      <p
+        className="
+          mt-0 mb-4
+          text-gray-700 md:text-2xl
+          text-center
+          max-w-lg
+          urdu-text
+          bg-green-200
+          px-5 py-1
+          rounded-3xl
+        "
+      >
+        معتبر علماء کے مستند اسلامی فتاویٰ میں تلاش کریں
+      </p>
+    </div>
+  );
+}
+
+export default HomeHero;

@@ -5,7 +5,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import fatawahData from "../Json-data";
+import fatawahData from "../../Json-data";
 
 export default function MujtahideenSlider() {
   const images = useMemo(() => {

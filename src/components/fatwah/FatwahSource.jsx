@@ -1,0 +1,33 @@
+import { LiaExternalLinkAltSolid } from "react-icons/lia";
+
+ function FatwahSource({ source }) {
+  if (!source?.url) return null;
+
+  return (
+    <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+      <p className="text-2xl tracking-wide text-gray-600 font-semibold mb-2 urdu-text">
+        اصل ماخذ
+      </p>
+
+      <a
+        href={source.url}
+        target="_blank"
+        rel="noreferrer"
+        className="
+          inline-flex items-center gap-3
+          text-2xl font-semibold text-gray-800
+          px-3 py-2 rounded-lg
+          hover:text-blue-700 hover:bg-blue-50
+          transition-all
+        "
+      >
+        <span className="border-b-2 border-dotted border-gray-400 hover:border-blue-600">
+          {source.name}
+        </span>
+        <LiaExternalLinkAltSolid className="text-2xl md:text-3xl text-blue-600 opacity-80" />
+      </a>
+    </div>
+  );
+}
+
+export default FatwahSource;
