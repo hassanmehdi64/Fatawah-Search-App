@@ -8,7 +8,7 @@ function HomeHero() {
         className="
           flex items-center justify-center
           w-16 h-16 sm:w-20 sm:h-20
-          mb-4
+          mb-4 p-2
           rounded-2xl
           bg-white
           shadow-md
