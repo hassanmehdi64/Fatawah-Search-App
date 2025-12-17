@@ -67,7 +67,7 @@ export default function MujtahideenSlider() {
                     src={img}
                     alt="Mujtahid"
                     className={`
-                      w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20
+                      w-12 h-12 sm:w-16 sm:h-16 md:w-18 md:h-18
                       rounded-full object-cover
                       border
                       ${

@@ -7,7 +7,8 @@ function PopularTags() {
   return (
     <div className="w-full max-w-6xl mx-auto pb-6 sm:pb-8">
       <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-        {/* Tags first */}
+
+        {/* Tags */}
         {tags.map((tag) => (
           <button
             key={tag}
@@ -15,24 +16,25 @@ function PopularTags() {
             className="
               urdu-text
               cursor-pointer
-              text-sm sm:text-base md:text-xl
-              px-4 sm:px-6 py-1 sm:py-2
-              rounded-full
-              bg-green-200 text-gray-900
-              font-medium
-              shadow-sm ring-1 ring-gray-200
-              hover:bg-green-300
-              transition
+              inline-flex items-center justify-center
+              text-xs sm:text-sm 
+              px-3 py-1
+              mb-7
+              rounded-md
+              bg-green-100 text-black
+              border border-green-200
+              hover:bg-green-200
+              transition-transform
               active:scale-95
-              focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400
+              focus:outline-none focus-visible:ring-1 focus-visible:ring-green-300
             "
           >
             {tag}
           </button>
         ))}
 
-        {/* Label at end */}
-        <span className="urdu-text text-base sm:text-xl md:text-2xl font-semibold text-gray-600 whitespace-nowrap scroll-mb-4">
+        {/* Label placed after tags to appear on the right side */}
+        <span className="urdu-text text-base sm:text-lg md:text-xl font-semibold text-gray-600 whitespace-nowrap mr-2 sm:mr-4 mb-7" >
           مقبول موضوعات:
         </span>
       </div>

@@ -2,10 +2,6 @@ import HomeHero from "../components/home/HomeHero";
 import PopularTags from "../components/home/PopularTags";
 import SearchSection from "../components/home/SearchSection";
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
-</style>
-
 
 export default function Home() {
   return (
