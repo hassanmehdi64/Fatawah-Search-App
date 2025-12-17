@@ -7,7 +7,7 @@ function HomeHero() {
       <div
         className="
           flex items-center justify-center
-          w-16 h-16 sm:w-26 sm:h-22
+          w-16 h-16 sm:w-20 sm:h-20
           mb-4
           rounded-2xl
           bg-white
@@ -17,12 +17,12 @@ function HomeHero() {
       >
         <BookOpenCheck
           className="
-          p-2
-    w-14 h-14
-    md:w-16 md:h-16
-    lg:w-20 lg:h-20
-    text-blue-600
-  "
+            w-10 h-10
+            sm:w-12 sm:h-12
+            md:w-16 md:h-16
+            lg:w-20 lg:h-20
+            text-blue-600
+          "
         />
       </div>
 
@@ -34,10 +34,11 @@ function HomeHero() {
           text-transparent bg-clip-text
           bg-gradient-to-r from-blue-500 to-blue-700
           text-center
-          heading
+          noto-urdu
           leading-tight
-          tracking-[-0.02em]
-          border-b-1 border-blue-300 border-dotted pb-1
+          tracking-normal
+          border-b border-blue-300 border-dotted
+          pb-1
         "
       >
         فتاویٰ سرچ
@@ -49,7 +50,7 @@ function HomeHero() {
           text-gray-700
           text-xl sm:text-2xl md:text-3xl
           text-center
-          urdu-text
+         urdu-text
           leading-snug
           mt-1
         "
@@ -65,7 +66,8 @@ function HomeHero() {
           text-sm sm:text-base md:text-2xl
           text-center
           max-w-lg
-          urdu-text
+         urdu-text
+          font-medium
           bg-green-200
           px-4 sm:px-5
           py-1.5
