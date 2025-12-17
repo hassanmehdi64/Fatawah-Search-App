@@ -23,6 +23,7 @@ function HomeHero() {
           text-center
           nato-urdu-text
           leading-tight
+          heading-urdu
           tracking-normal
           border-b border-blue-300 border-dotted
           pb-1

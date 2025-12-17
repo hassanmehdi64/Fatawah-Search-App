@@ -7,9 +7,9 @@
 }
 
 @font-face {
-  font-family: "JASVCoder LT";
-  src: url("/fonts/CODE-Bold.otf") format("opentype");
-  font-weight: 700;
+  font-family: "Bombay Black";
+  src: url("/fonts/Bombay Black.ttf") format("opentype");
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
@@ -24,10 +24,9 @@
   word-spacing: 0.05em;
 }
 
-/* Headings / Latin text */
-.heading {
-  font-family:  "JASVCoder LT", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+/* Headings */
+.heading-urdu{
+  font-family:  "Bombay Black";
   text-align: center;
 }
 
