@@ -11,9 +11,9 @@ function SearchButton({ onClick, disabled }) {
         flex items-center justify-center cursor-pointer
         h-9 w-12
         sm:h-10 sm:w-auto
-        px-0 sm:px-4
+        px-0 sm:px-3
         shrink-0
-        rounded-full
+        rounded-2xl
         bg-blue-500 text-white
         shadow-sm
         hover:bg-blue-600

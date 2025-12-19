@@ -18,7 +18,7 @@ function SearchBar({ initialQuery = "" }) {
         className="
           relative flex items-center
           w-full h-11 sm:h-14
-          px-2 sm:px-3 gap-2
+          px-2 sm:px-2 gap-2
           bg-white
           border border-slate-200
           rounded-2xl

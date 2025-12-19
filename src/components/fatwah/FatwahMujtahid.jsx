@@ -1,16 +1,15 @@
-import { Tag } from "lucide-react";
-
 function FatwahMujtahid({ mujtahid }) {
   return (
     <div
       className="
-        flex items-center
-        gap-3 sm:gap-4
-        bg-white
-        border border-gray-200
-        rounded-xl
+        flex items-center gap-4
+        bg-gradient-to-br from-white to-slate-50
+        border border-slate-200
+        rounded-2xl
         p-4 sm:p-5
         shadow-sm
+        transition
+        hover:shadow-md
       "
     >
       {/* Mujtahid Image */}
@@ -24,30 +23,18 @@ function FatwahMujtahid({ mujtahid }) {
           rounded-full
           object-cover
           ring-2 ring-blue-100
+          bg-white
         "
       />
 
-      <div>
+      <div className="urdu-text">
         {/* Label */}
-        <p
-          className="
-            text-sm sm:text-base md:text-2xl
-            tracking-wide
-            text-gray-600
-            mb-0.5
-          "
-        >
+        <p className="text-xs sm:text-sm md:text-base text-gray-500 tracking-wide">
           مجتہد
         </p>
 
         {/* Name */}
-        <p
-          className="
-            text-base sm:text-lg md:text-3xl
-            font-semibold
-            text-gray-800
-          "
-        >
+        <p className="text-base sm:text-lg md:text-2xl font-semibold text-slate-900">
           {mujtahid.name}
         </p>
       </div>

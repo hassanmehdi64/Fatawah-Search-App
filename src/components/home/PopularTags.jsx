@@ -1,14 +1,16 @@
 import { useNavigate } from "react-router-dom";
+import fatawahData from "../../Json-data";
 
 function PopularTags() {
   const navigate = useNavigate();
-  const tags = ["نماز", "روزہ", "نکاح", "طہارت", "جماعت", "زکوٰۃ"];
+
+  const tags = Array.from(
+    new Set(fatawahData.flatMap((item) => item.tags || []))
+  ).slice(0, 8);
 
   return (
     <div className="w-full max-w-6xl mx-auto pb-6 sm:pb-8">
       <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-
-        {/* Tags */}
         {tags.map((tag) => (
           <button
             key={tag}
@@ -33,8 +35,7 @@ function PopularTags() {
           </button>
         ))}
 
-        {/* Label placed after tags to appear on the right side */}
-        <span className="urdu-text text-base sm:text-lg md:text-xl font-semibold text-gray-600 whitespace-nowrap mr-2 sm:mr-4 mb-7" >
+        <span className="urdu-text text-base sm:text-lg md:text-xl font-semibold text-gray-600 whitespace-nowrap mr-2 sm:mr-4 mb-7">
           مقبول موضوعات:
         </span>
       </div>

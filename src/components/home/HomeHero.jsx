@@ -25,7 +25,6 @@ function HomeHero() {
           leading-tight
           heading-urdu
           tracking-normal
-          border-b border-blue-300 border-dotted
           pb-1
         "
       >
