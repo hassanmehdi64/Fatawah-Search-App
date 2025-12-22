@@ -14,7 +14,8 @@ export default function FatwahDetailPage() {
     <div className="min-h-screen bg-gray-100" dir="rtl">
       <Header />
 
-      <main className="max-w-4xl mx-auto px-4 py-10">
+      {/* changed: py-10 -> pt-10 (remove bottom spacing) */}
+      <main className="max-w-auto mx-auto px-4 pt-10">
         <FatwahCard fatawah={fatawah} />
       </main>
     </div>

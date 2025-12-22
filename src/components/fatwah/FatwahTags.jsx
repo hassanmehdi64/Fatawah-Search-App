@@ -9,7 +9,11 @@ function FatwahTags({ tags }) {
       {tags.map((tag, idx) => (
         <button
           key={idx}
-          onClick={() => navigate(`/search?q=${encodeURIComponent(tag)}`)}
+          onClick={() =>
+            navigate(`/search?q=${encodeURIComponent(tag)}`, {
+              replace: true,
+            })
+          }
           className="
             cursor-pointer
             inline-flex items-center justify-center

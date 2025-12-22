@@ -13,10 +13,10 @@ function SearchButton({ onClick, disabled }) {
         sm:h-10 sm:w-auto
         px-0 sm:px-3
         shrink-0
-        rounded-2xl
+        rounded-xl
         bg-blue-500 text-white
         shadow-sm
-        hover:bg-blue-600
+        hover:bg-blue-600 
         active:scale-95
         transition-all duration-200
         disabled:opacity-40 disabled:cursor-not-allowed
