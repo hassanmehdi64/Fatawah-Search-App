@@ -25,6 +25,7 @@ function SearchResultsList({ results }) {
       {/* Pagination */}
       <Pagination
         className="mt-6"
+        dir="rtl"
         currentPage={currentPage}
         totalPages={totalPages}
         setCurrentPage={setCurrentPage}

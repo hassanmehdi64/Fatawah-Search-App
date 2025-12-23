@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { IoArrowBackOutline } from "react-icons/io5";
 import { HiExclamationCircle } from "react-icons/hi";
+import Homebutton from "../components/no Result/Homebutton";
 
- function NotFound() {
+function NotFound() {
   return (
     <div
       dir="rtl"
@@ -28,23 +29,7 @@ import { HiExclamationCircle } from "react-icons/hi";
         </p>
 
         {/* Home Button */}
-        <Link
-          to="/"
-          className="
-            inline-flex items-center gap-2
-            px-5 py-0
-            rounded-2xl
-            bg-blue-600 text-white
-            text-sm md:text-xl font-medium
-            hover:bg-blue-700
-            transition
-            shadow-sm
-            urdu-text 
-          "
-        >
-          ہوم
-          <IoArrowBackOutline className="text-lg" />
-        </Link>
+        <Homebutton />
       </div>
     </div>
   );

@@ -1,3 +1,5 @@
+import Homebutton from "./Homebutton";
+
 export default function NoResults() {
   return (
     <div className="flex flex-col items-center justify-center py-20 text-center">
@@ -8,12 +10,7 @@ export default function NoResults() {
         آپ کی تلاش سے متعلق کوئی fatawah نہیں ملا۔ مختلف keywords آزمائیں یا
         مشہور topics دیکھیں۔
       </p>
-      <a
-        href="/"
-        className="px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors urdu-text"
-      >
-        واپس ہوم
-      </a>
+      <Homebutton />
     </div>
   );
 }

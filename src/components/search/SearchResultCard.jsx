@@ -28,7 +28,7 @@ function SearchResultCard({ item, index }) {
           </h2>
 
           {/*================== Answer=============== */}
-          <p className="text-gray-600 leading-relaxed urdu-text text-sm md:text-2xl font-semibold line-clamp-2 mb-4">
+          <p className="text-gray-600 leading-tight urdu-text text-sm md:text-2xl font-medium line-clamp-2 mb-4">
             <span className="text-xl text-blue-600 font-bold ml-1">جواب:</span>
             {item.answer || item.answer_ur}
           </p>

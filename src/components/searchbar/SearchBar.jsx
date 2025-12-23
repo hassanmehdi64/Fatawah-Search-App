@@ -29,7 +29,6 @@ function SearchBar({ initialQuery = "" }) {
         "
       >
         <SearchButton onClick={handleSearch} disabled={!query.trim()} />
-
         <SearchInput value={query} onChange={setQuery} onEnter={handleSearch} />
       </div>
     </div>

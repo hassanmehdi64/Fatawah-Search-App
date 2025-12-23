@@ -2,15 +2,17 @@ function FatwahMujtahid({ mujtahid }) {
   return (
     <div
       className="
-        flex items-center gap-4
-        bg-gradient-to-br from-white to-slate-50
-        border border-slate-200
-        rounded-2xl
-        p-4 sm:p-5
-        shadow-sm
-        transition
-        hover:shadow-md
-      "
+    max-w-full
+    md:w-full
+    flex items-center gap-4
+    bg-gradient-to-br from-white to-slate-50
+    border border-slate-200
+    rounded-2xl
+    p-4 sm:p-5
+    shadow-sm
+    transition
+    hover:shadow-md
+  "
     >
       {/* Mujtahid Image */}
       <img

@@ -24,9 +24,6 @@ function FatwahSource({ source }) {
       )}
 
       {/* Label */}
-      <span className="block text-xs sm:text-sm md:text-base text-gray-400 mb-1">
-        اصل ماخذ
-      </span>
 
       {/* Source Link */}
       <a
@@ -35,18 +32,21 @@ function FatwahSource({ source }) {
         rel="noreferrer"
         className="
           inline-flex items-center gap-2
-          text-base sm:text-lg md:text-xl
+          text-base sm:text-lg md:text-lg
           font-semibold text-slate-900
           px-3 py-2 rounded-lg
           hover:text-blue-600 hover:bg-blue-50
           transition
         "
       >
+        <span className="block text-xs sm:text-sm md:text-base text-gray-400 mb-1">
+          اصل ماخذ :
+        </span>
         <span className="border-b border-dotted border-gray-400 hover:border-blue-500">
           {source.name}
         </span>
 
-        <LiaExternalLinkAltSolid className="text-lg md:text-2xl text-blue-600 opacity-80" />
+        <LiaExternalLinkAltSolid className="text-lg md:text-xl text-blue-600 opacity-80" />
       </a>
     </div>
   );

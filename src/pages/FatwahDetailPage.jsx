@@ -11,10 +11,9 @@ export default function FatwahDetailPage() {
   if (!fatawah) return <NoResults />;
 
   return (
-    <div className="min-h-screen bg-gray-100" dir="rtl">
+    <div className="min-h-screen bg-gray-100" dir="ltr">
       <Header />
 
-      {/* changed: py-10 -> pt-10 (remove bottom spacing) */}
       <main className="max-w-auto mx-auto px-4 pt-10">
         <FatwahCard fatawah={fatawah} />
       </main>
