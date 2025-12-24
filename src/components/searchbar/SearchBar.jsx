@@ -9,7 +9,9 @@ function SearchBar({ initialQuery = "" }) {
 
   const handleSearch = () => {
     if (!query.trim()) return;
-    navigate(`/search?q=${encodeURIComponent(query.trim())}`);
+
+    // ✅ Navigate to AI results page
+    navigate(`/ai-result?q=${encodeURIComponent(query.trim())}`);
   };
 
   return (

@@ -17,15 +17,14 @@ function SearchResultsList({ results }) {
 
   return (
     <div className="space-y-4 pr-1">
-      {/* Results */}
+      {/*========== Results ===========*/}
       {paginatedResults.map((item, index) => (
         <SearchResultCard key={item.id || index} item={item} index={index} />
       ))}
 
-      {/* Pagination */}
+      {/* ==============Pagination ===========*/}
       <Pagination
         className="mt-6"
-        dir="rtl"
         currentPage={currentPage}
         totalPages={totalPages}
         setCurrentPage={setCurrentPage}
